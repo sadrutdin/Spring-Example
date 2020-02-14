@@ -1,6 +1,6 @@
 package com.zaynukov.dev;
 
-import com.zaynukov.dev.service.people.MyServiceImpl;
+import com.zaynukov.dev.service.my.MyServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;

@@ -1,4 +1,4 @@
-package com.zaynukov.dev.service.people;
+package com.zaynukov.dev.service.my;
 
 import com.zaynukov.dev.annotation.Profilng;
 import org.springframework.stereotype.Service;
