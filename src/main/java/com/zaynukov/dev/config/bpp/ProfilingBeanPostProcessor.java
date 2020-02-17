@@ -1,6 +1,6 @@
 package com.zaynukov.dev.config.bpp;
 
-import com.zaynukov.dev.annotation.Profilng;
+import com.zaynukov.dev.annotation.Profiling;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
@@ -16,7 +16,7 @@ class ProfilingBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         Class<?> clazz = bean.getClass();
-        if (clazz.isAnnotationPresent(Profilng.class)) {
+        if (clazz.isAnnotationPresent(Profiling.class)) {
             map.put(beanName, clazz);
         }
         return bean;
